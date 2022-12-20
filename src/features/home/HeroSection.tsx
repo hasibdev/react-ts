@@ -50,6 +50,7 @@ const StyledHeroSection = styled.section`
       width: 100%;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
+      font-size: 20px;
       &:focus {
         border-color: var(--bs-primary);
         outline: none;

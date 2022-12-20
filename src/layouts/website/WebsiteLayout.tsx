@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom"
+import WebsiteFooter from "./WebsiteFooter"
 import WebsiteHeder from "./WebsiteHeder"
 
 const WebsiteLayout = () => {
@@ -6,7 +7,11 @@ const WebsiteLayout = () => {
     <>
       <WebsiteHeder />
 
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
+
+      <WebsiteFooter />
     </>
   )
 }

@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom"
-import Home from "../pages/website/home/Index"
-import Admin from "../pages/admin/Index"
-import Seller from "../pages/seller/Index"
+import HomePage from "../pages/website/Home"
+import AdminDashboard from "../pages/admin/Dashboard"
+import SellerDashboard from "../pages/seller/Dashboard"
 import AdminLayout from "../layouts/admin/AdminLayout"
 import SellerLayout from "../layouts/seller/SellerLayout"
 import AdminLogin from "../pages/admin/auth/AdminLogin"
@@ -12,16 +12,16 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<WebsiteLayout />}>
-          <Route index element={<Home />} />
+          <Route index element={<HomePage />} />
         </Route>
 
         <Route path="/admin" element={<AdminLayout />}>
-          <Route index element={<Admin />} />
+          <Route index element={<AdminDashboard />} />
           <Route path="login" element={<AdminLogin />} />
         </Route>
 
         <Route path="/seller" element={<SellerLayout />}>
-          <Route index element={<Seller />} />
+          <Route index element={<SellerDashboard />} />
         </Route>
       </Routes>
     </>
