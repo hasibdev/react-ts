@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledHeader = styled.header`
   display: flex;
   background-color: #fff;
-  padding: 2rem 1.2rem;
+  padding: 2rem 2.2rem;
 
   .logo {
     width: 12rem;
