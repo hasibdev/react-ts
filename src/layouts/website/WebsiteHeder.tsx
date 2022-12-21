@@ -26,6 +26,7 @@ const WebsiteHeder = () => {
 
 const StyledHeader = styled.header`
   display: flex;
+  align-items: center;
   background-color: #fff;
   padding: 2rem 2.2rem;
 
@@ -38,6 +39,7 @@ const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-bottom: 0;
 
     .item {
       .link {
