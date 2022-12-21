@@ -1,5 +1,6 @@
 @import "bootstrap.scss";
 
+@import "./override.scss";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 body,
@@ -7,6 +8,7 @@ html {
   font-family: "Lato", sans-serif !important;
   font-size: 17px;
   min-height: 100vh;
+  background-color: #f3f4f6;
 }
 
 h1,

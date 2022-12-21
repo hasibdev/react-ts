@@ -1,21 +1,36 @@
-import { createSlice, nanoid } from '@reduxjs/toolkit'
+import { createSlice, nanoid, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit'
+import axios, { AxiosError } from 'axios'
+
+interface Post {
+  id: string | number,
+  userId: string | number,
+  title: string,
+  body: string
+}
+
+type Status = 'idle' | 'succeeded' | 'loading' | 'failed'
+
+interface State {
+  data: Post[],
+  status: Status,
+  error: string
+}
+
+const initialState: State = {
+  data: [],
+  status: 'idle',
+  error: ''
+}
 
 export const postSlice = createSlice({
   name: 'posts',
-  initialState: {
-    data: [
-      { id: 1, title: 'Post One', description: 'Post one description' },
-      { id: 2, title: 'Post Two', description: 'Second post description' },
-    ]
-  },
+  initialState,
   reducers: {
     addPost: {
-      reducer(state, action) {
-        console.log(action)
-
+      reducer(state, action: PayloadAction<Post>) {
         state.data.push(action.payload)
       },
-      prepare(data): any {
+      prepare(data) {
         return {
           payload: {
             id: nanoid(),
@@ -24,7 +39,10 @@ export const postSlice = createSlice({
         }
       },
     }
-  }
+  },
+  extraReducers(builder) {
+
+  },
 })
 
 export const { addPost } = postSlice.actions

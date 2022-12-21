@@ -1,0 +1,54 @@
+{
+  "todos": [
+    { "id": "1", "title": "Learn Javascript", "completed": false },
+    { "id": "2", "title": "Css Media query", "completed": true },
+    { "id": "3", "title": "HTML Markup", "completed": false }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@doe.com"
+    },
+    {
+      "id": "2",
+      "name": "Layla",
+      "email": "john@doe.com"
+    },
+    {
+      "id": "2",
+      "name": "Johnson",
+      "email": "john@doe.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Awesome Javascript course",
+      "description": "lorem ispum awesome javascript course",
+      "userId": "1",
+      "createdAt": "2022-12-21T15:07:40.716Z",
+      "reactions": {
+        "thumbsup": 0,
+        "wow": 0,
+        "heart": 0,
+        "rocket": 0,
+        "coffee": 0
+      }
+    },
+    {
+      "id": "2",
+      "title": "Learning Css animation",
+      "description": "awesome lorem Learning Css animation ispum awesome javascript course",
+      "userId": "2",
+      "createdAt": "2022-12-21T17:02:55.014Z",
+      "reactions": {
+        "thumbsup": 0,
+        "wow": 0,
+        "heart": 0,
+        "rocket": 0,
+        "coffee": 0
+      }
+    }
+  ]
+}
