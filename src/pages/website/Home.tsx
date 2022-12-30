@@ -4,7 +4,7 @@ import PostList from "../../features/posts/PostList"
 const Home = () => {
   return (
     <>
-      <PostList />
+      {/* <PostList /> */}
 
       <HeroSection />
     </>
