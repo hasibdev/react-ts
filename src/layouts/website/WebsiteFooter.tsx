@@ -2,8 +2,8 @@ import React from 'react'
 
 const WebsiteFooter = () => {
   return (
-    <footer>
-      <p className="text-center">Copyright @ hasib.dev</p>
+    <footer className='fixed-bottom p-4'>
+      <p className="text-center mb-0">Copyright @ hasib.dev</p>
     </footer>
   )
 }

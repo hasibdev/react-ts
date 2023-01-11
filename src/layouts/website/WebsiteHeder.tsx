@@ -16,6 +16,7 @@ const WebsiteHeder = () => {
         <li className="item"> <Link to="/" className="link">Shop</Link> </li>
         <li className="item"> <Link to="/" className="link">Offers</Link> </li>
         <li className="item"> <Link to="/" className="link">FAQ</Link> </li>
+        <li className="item"> <Link to="/notes" className="link">Notes</Link> </li>
         <li className="item"> <Link to="/" className="link">Contact</Link> </li>
         <li className="item"> <Link to="/" className="btn btn-primary">Become a Seller</Link> </li>
         <li className="item"> <button className="btn btn-primary">Join</button> </li>
